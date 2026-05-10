@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Khai báo font Cabin */
+  --font-cabin: "Cabin", sans-serif;
+
+  /* Khai báo bảng màu Bảo Việt */
+  --color-bv-blue: #0054A6;
+  --color-bv-gold: #D4AF37;
+  --color-messenger: #0084FF;
+  --color-zalo: #0068FF;
+}
+
+/* Áp dụng font cho toàn bộ trang web */
+:root {
+  font-family: var(--font-cabin);
+}
