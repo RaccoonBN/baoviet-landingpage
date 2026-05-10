@@ -1,17 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  /* Khai báo font Cabin */
-  --font-cabin: "Cabin", sans-serif;
+  /* ── Fonts ──────────────────────────────── */
+  --font-lexend: "Lexend Deca", sans-serif;
+  --font-vibes:  "Great Vibes", cursive;
 
-  /* Khai báo bảng màu Bảo Việt */
-  --color-bv-blue: #0054A6;
-  --color-bv-gold: #D4AF37;
-  --color-messenger: #0084FF;
-  --color-zalo: #0068FF;
+  /* ── Colour palette (blue ocean) ────────── */
+  --color-bv-primary: #0A1F3D;   /* Xanh hải quân đậm  */
+  --color-bv-mid:     #0D3B6E;   /* Xanh dương trung   */
+  --color-bv-bright:  #1B6FC8;   /* Xanh dương sáng ✦  */
+  --color-bv-sky:     #3FA9F5;   /* Xanh trời nhạt     */
+  --color-bv-accent:  #60C8FF;   /* Cyan ánh sáng      */
+  --color-bv-gold:    #D4AF37;   /* Vàng kim (giữ lại) */
+  --color-bv-surface: #E8F4FD;   /* Nền xanh siêu nhạt */
+
+  /* ── Animation ──────────────────────────── */
+  --animate-slow-fade: slow-fade 1.5s ease-in-out forwards;
 }
 
-/* Áp dụng font cho toàn bộ trang web */
+@keyframes slow-fade {
+  from { opacity: 0;  transform: translateY(20px); filter: blur(6px);  }
+  to   { opacity: 1;  transform: translateY(0);    filter: blur(0);     }
+}
+
 :root {
-  font-family: var(--font-cabin);
+  font-family: var(--font-lexend);
+  scroll-behavior: smooth;
 }
