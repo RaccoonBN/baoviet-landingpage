@@ -92,7 +92,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3 sm:gap-4">
             <a 
               href="#register" 
-              className="hidden sm:block bg-[#1B6FC8] hover:bg-[#3FA9F5] text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
+              className="hidden sm:block bg-gradient-to-r from-[#1B6FC8] to-[#3FA9F5] text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg hover:shadow-[#1B6FC8]/30 transition-all duration-300 hover:scale-105 active:scale-95"
             >
               Đăng ký tư vấn
             </a>
