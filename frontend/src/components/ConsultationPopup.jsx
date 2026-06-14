@@ -123,7 +123,7 @@ export default function ConsultationPopup() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-[10px] uppercase font-bold text-slate-400">Gói quan tâm</label>
+                    <label className="text-[10px] uppercase font-bold text-slate-400">Gói quan tâm (có thể chọn nhiều)</label>
                     <div className="grid grid-cols-2 gap-2">
                       {interestOptions.map(opt => (
                         <button key={opt} type="button" onClick={() => handleToggleInterest(opt)}
